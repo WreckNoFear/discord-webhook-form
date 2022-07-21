@@ -10,7 +10,7 @@ async function submitHandler(e) {
     const webhookContent = {
         embeds: [{
             title: 'Crafty Gamers Visa Application',
-            color: ffffffff,
+            color: 0x0099ff,
             timestamp: new Date(),
             fields: [
                 { name: 'Discord User', value: discordUsername + '#' + discordTag },
