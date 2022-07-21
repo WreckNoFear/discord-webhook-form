@@ -1,3 +1,5 @@
+const appForm = document.getElementById('application-form');
+
 async function submitHandler(e) {
     e.preventDefault();
 
@@ -29,6 +31,7 @@ async function submitHandler(e) {
         "body": JSON.stringify(webhookContent),
         })
         .then(res=> console.log(res))
+        .then(appForm.reset())
         .then(alert('Application Submitted!'))
         .catch(err => console.error(err));
 }
