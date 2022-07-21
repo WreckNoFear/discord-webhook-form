@@ -29,5 +29,6 @@ async function submitHandler(e) {
         "body": JSON.stringify(webhookContent),
         })
         .then(res=> console.log(res))
+        .then(alert('Application Submitted!'))
         .catch(err => console.error(err));
 }
