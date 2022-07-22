@@ -130,8 +130,8 @@ input[type=submit]:focus {
     background-color: var(--secondary);
     font-weight: 500;
 }
-.spin-wheel {
-    background: #e8eac7;
+.work-visa {
+    background: #f5a142;
 }
 
 input[type=number]::-webkit-inner-spin-button, 
