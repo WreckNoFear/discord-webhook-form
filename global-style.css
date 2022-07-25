@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    user-select: none;
+}
+
+:root {
+    --primary: #a9e0e0;
+    --secondary: #879ca0;
+}
+
+body {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/* Header */
+.form-header {
+    margin-top: 20px;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+.form-header img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    min-width: 100px;
+    max-width: 150px;
+    border-radius: 200px;
+}
+.header-text {
+    color: #000;
+    text-align: center;
+    font-size: 1.8rem;
+    margin-top: 10px;
+    max-width: 100%;
+}
+
+/* Form */
+.form-wrapper {
+    width: 90%;
+    margin-left: 5%;
+    min-width: 180px;
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+#application-form {
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 2px 40px 0 rgba(0, 0, 0, 0.4);
+    border-radius: 20px;
+}
+
+/* Labels */
+label {
+    line-height: 2rem;
+    display: block;
+}
+label::after {
+    content: attr(discord-hash);
+    position: absolute;
+    top: 200px;
+    left: 60px;
+}
+p {
+    margin-bottom: 5px;
+}
+
+/* Input Main */
+
+input {
+    border: none;
+    border-bottom: 2px solid #000;
+    padding: 20px;
+    transition: all 0.3s ease-in-out;
+}
+input:focus {
+    outline: none;
+    border-bottom: 2px solid transparent;
+    border-image: linear-gradient(0.25turn, #ecec91, #ec9191, #e981e9, rgba(56,2,155,0));
+    border-image-slice: 1;
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Text/Number Input */
+input[type=text], input[type=number] {
+    width: 100%;
+    margin-bottom: 20px;
+}
+input[type=number] {
+    padding-left: 35px;
+}
+
+/* Inline Selection Menu */
+input[type=radio] {
+    width: 100%;
+    height: 60px;
+    opacity: 0;
+}
+.inline-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #000;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+    border-right: 2px solid #000;
+}
+.inline-radio {
+    display: flex;
+    border-radius: 3px;
+    border: 2px solid #000;
+    margin-bottom: 20px;
+}
+input[type=radio]:checked + label {
+    background: #000;
+    font-weight: 600;
+    color: #fff;
+}
+div {
+    position: relative;
+    flex: 1;
+}
+
+/* Work Visa */
+.work-visa {
+    background: #f1f1f1;
+}
+
+/* Submit Button */
+input[type=submit] {
+    width: 100%;
+    border: solid 2px black;
+    font-size: 1.2rem;
+    border-radius: 20px;
+    background: linear-gradient(to left, transparent, transparent 50%, #ecec91 50%, #eecc8d, #ec9191, #e985a5, #e981e9);
+    background-size: 200% 100%;
+    background-position: 100% 0;
+    transition: all 0.3s ease-in-out;
+}
+input[type=submit]:focus {
+    font-weight: 500;
+}
+input[type=submit]:hover {
+    background-position: 0 0;
+
+}
+
+/* Webkit Defaults */
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+/* Submission popup */
+#submitted {
+    z-index: 2;
+    width: 50%;
+    left: 25%;
+    top: 50%;
+    background-color: #fff;
+    font-weight: 500;
+    font-size: 1.2rem;
+    position: absolute;
+    text-align: center;
+    box-shadow: 0 2px 40px 0 rgba(0, 0, 0, 0.4);
+    padding: 20px;
+    visibility: hidden;
+}
+#submitted button {
+    background-color: #fff;
+    border: solid 2px black;
+    padding: 20px 80px;
+    font-weight: 600;
+    font-size: 1.2rem;
+    display: block;
+    position: relative;
+    margin: auto;
+    margin-top: 20px;
+}
+#submitted button:hover {
+    background-color: #000;
+    color: white;
+}
+#background-prevent {
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.2);
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    height: 110%;
+    top: 0%;
+    visibility: hidden;
+}
