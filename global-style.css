@@ -201,6 +201,7 @@ input[type=number]::-webkit-outer-spin-button {
 #background-prevent {
     z-index: 1;
     background: rgba(0, 0, 0, 0.2);
+    position: absolute;
     height: 100%;
     top: 0%;
     visibility: hidden;
