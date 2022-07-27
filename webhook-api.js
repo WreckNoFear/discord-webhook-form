@@ -1,9 +1,16 @@
 const preventable = document.getElementById('background-prevent');
 const popup = document.getElementById('submitted');
+const form = document.getElementById('application-form');
 
 async function submitHandler(e) {
     e.preventDefault();
 
+    if (form.checkValidity() == true) {
+        break;
+    } else {
+        return;
+    }
+    
     const discordUsername = document.getElementById('discord-username').value;
     const discordTag = document.getElementById('discord-tag').value;
     const firstName = document.getElementById('first-name').value;
@@ -38,7 +45,6 @@ async function submitHandler(e) {
 }
 
 async function resetForm() {
-    const form = document.getElementById('application-form');
     preventable.style.visibility = "hidden";
     popup.style.visibility = "hidden";
     form.reset();
