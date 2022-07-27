@@ -143,8 +143,9 @@ div {
 
 /* Submit Button */
 input[type=submit] {
+    color: #000;
     width: 100%;
-    border: solid 2px black;
+    border: solid 2px #000;
     font-size: 1.2rem;
     border-radius: 20px;
     background: linear-gradient(to left, transparent, transparent 50%, #ecec91 50%, #eecc8d, #ec9191, #e985a5, #e981e9);
