@@ -4,12 +4,6 @@ const form = document.getElementById('application-form');
 
 async function submitHandler(e) {
     e.preventDefault();
-
-    if (form.checkValidity() == true) {
-        break;
-    } else {
-        return;
-    }
     
     const discordUsername = document.getElementById('discord-username').value;
     const discordTag = document.getElementById('discord-tag').value;
