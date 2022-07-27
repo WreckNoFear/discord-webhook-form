@@ -186,7 +186,7 @@ input[type=number]::-webkit-outer-spin-button {
 #submitted button {
     background-color: #fff;
     border: solid 2px black;
-    padding: 20px 80px;
+    padding: 20px 40px;
     font-weight: 600;
     font-size: 1.2rem;
     display: block;
