@@ -75,7 +75,6 @@ p {
 }
 
 /* Input Main */
-
 input {
     border: none;
     border-bottom: 2px solid #000;
@@ -159,11 +158,6 @@ input[type=submit]:focus {
 input[type=submit]:hover {
     background-position: 0 0;
 
-}
-
-/* Invalid Highlight */
-form.appSubmit input:invalid {
-    border-bottom: 2px solid #ff0000;
 }
 
 /* Submission popup */
