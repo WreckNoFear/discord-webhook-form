@@ -163,7 +163,7 @@ input[type=submit]:hover {
 
 /* Invalid Highlight */
 input:focus:invalid {
-    border-bottom: 2px solid #ff0000;
+    border-bottom: 2px solid #ff0000 !important;
 }
 
 /* Submission popup */
