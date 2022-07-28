@@ -1,6 +1,6 @@
 const preventable = document.getElementById('background-prevent');
 const popup = document.getElementById('submitted');
-const form = document.getElementById('application-form');
+const form = document.getElementById('application-form').className="appSubmit";;
 
 async function submitHandler(e) {
     e.preventDefault();
@@ -43,3 +43,9 @@ async function resetForm() {
     popup.style.visibility = "hidden";
     form.reset();
 }
+
+document.addEventListener('invalid', (function(){
+    return function(e) {
+        e.preventDefault();
+    };
+})(), true);
