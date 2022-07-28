@@ -162,7 +162,7 @@ input[type=submit]:hover {
 }
 
 /* Invalid Highlight */
-input:invalid {
+input:focus:invalid {
     border-bottom: 2px solid #ff0000;
 }
 
