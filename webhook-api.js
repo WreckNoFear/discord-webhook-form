@@ -25,7 +25,7 @@ async function submitHandler(e) {
         }],
     };
 
-    var webhookUrl = 'https://discord.com/api/webhooks/999556471438196736/I6fZvY7swXzdQ96f6LV9NlXGk6FYfPTEwBLBq71-fG-tWILvfIbwuqj8BYwHEBVjrgeY';
+    var webhookUrl = process.env.WEBHOOK_URL;
 
     fetch(webhookUrl, {
         "method":"POST",
